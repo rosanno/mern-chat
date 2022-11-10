@@ -53,7 +53,7 @@ const Sidebar = () => {
   });
 
   const getRooms = () => {
-    fetch('https://chats-aj5f.onrender.com/rooms')
+    fetch(`${import.meta.env.VITE_APP_BASE_URL}/rooms`)
       .then((res) => res.json())
       .then((data) => setRooms(data));
   };
