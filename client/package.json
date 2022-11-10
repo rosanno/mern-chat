@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "yarn install && vite build",
+    "build": "yarn install && vite build --ignore-engines",
     "preview": "vite preview"
   },
   "dependencies": {
