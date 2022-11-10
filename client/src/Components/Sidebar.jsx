@@ -53,6 +53,7 @@ const Sidebar = () => {
   });
 
   const getRooms = () => {
+    console.log(`${import.meta.env.VITE_APP_BASE_URL}/rooms`);
     fetch(`${import.meta.env.VITE_APP_BASE_URL}/rooms`)
       .then((res) => res.json())
       .then((data) => setRooms(data));
