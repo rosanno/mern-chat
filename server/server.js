@@ -103,7 +103,7 @@ io.on('connection', (socket) => {
 __dirname = path.resolve();
 
 if (process.env.NODE_ENV === 'production') {
-  app.use(express.static(path.join(__dirname, '../client/dist')));
+  app.use(express.static(path.join('../client/dist')));
 
   app.get('*', (req, res) => {
     res.sendFile(path.resolve(__dirname, '../client', 'dist', 'index.html'));
