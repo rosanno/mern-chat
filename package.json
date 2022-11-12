@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "scripts": {
     "start": "cd server && node server.js",
+    "prebuild": "cd server && npm run build",
     "build": "cd client && yarn build"
   }
 }
